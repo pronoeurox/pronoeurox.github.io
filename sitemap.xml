@@ -38,20 +38,4 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pronoeurox.github.io/"/>
   </url>
 
-  <!-- FAQ -->
-  <url>
-    <loc>https://pronoeurox.github.io/faq.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tutoriel d'installation -->
-  <url>
-    <loc>https://pronoeurox.github.io/installation.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>
