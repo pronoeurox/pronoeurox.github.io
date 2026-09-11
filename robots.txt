@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pronoeurox.github.io/sitemap.xml
