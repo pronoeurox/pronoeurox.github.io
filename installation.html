@@ -27,8 +27,8 @@
     "description": "Logiciel d'analyse statistique des tirages Euromillions depuis 2004",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Windows 10",
-    "softwareVersion": "1.0.27",
-    "fileSize": "47 MB",
+    "softwareVersion": "1.0.28",
+    "fileSize": "Bientôt disponible",
     "softwareRequirements": "Windows 10 (64 bits), 200 Mo d'espace disque",
     "inLanguage": "fr",
     "brand": {
@@ -37,10 +37,10 @@
     },
     "offers": {
       "@type": "Offer",
-      "price": "20.00",
+      "price": "59.00",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
-      "url": "https://pronoeurox.lemonsqueezy.com/checkout/buy/a29fb3d5-60c3-4209-8a22-b672c4d51df8"
+      "url": "https://pronoeurox.github.io/installation.html"
     }
   }
   </script>
@@ -92,7 +92,7 @@
   <div class="hero">
     <h1>Installer PronoEuroX</h1>
     <p>Tutoriel Windows 10 — 5 minutes chrono</p>
-    <a href="https://pronoeurox.lemonsqueezy.com/checkout/buy/a29fb3d5-60c3-4209-8a22-b672c4d51df8" class="cta">Acheter sur Lemon Squeezy</a>
+    <div class="cta">Acheter sur Lemon Squeezy — Bientôt disponible</div>
   </div>
 
   <h2>Prérequis</h2>
@@ -100,13 +100,13 @@
     <li><strong>Système</strong> : Windows 10 (64 bits). Windows 11 non testé.</li>
     <li><strong>Espace disque</strong> : 200 Mo minimum</li>
     <li><strong>RAM</strong> : 2 Go minimum</li>
-    <li><strong>Connexion Internet</strong> : requise uniquement pour la mise à jour automatique des tirages via l'API FDJ (puis logiciel 100 % offline)</li>
+    <li><strong>Connexion Internet</strong> : requise uniquement quand vous cliquez sur « Mettre à jour les tirages » (puis logiciel 100 % offline)</li>
     <li><strong>Compte Lemon Squeezy</strong> : pour acheter et recevoir le lien de téléchargement</li>
   </ul>
 
   <h2>Étape 1 — Acheter la licence</h2>
   <ol>
-    <li>Allez sur <a href="https://pronoeurox.lemonsqueezy.com/checkout/buy/a29fb3d5-60c3-4209-8a22-b672c4d51df8">la page de paiement Lemon Squeezy</a></li>
+    <li>Allez sur la page de paiement Lemon Squeezy — Bientôt disponible</li>
     <li>Remplissez le formulaire (carte bancaire ou PayPal)</li>
     <li>Vous recevez un email de confirmation avec le <strong>lien de téléchargement</strong> du logiciel</li>
   </ol>
@@ -118,26 +118,26 @@
   <h2>Étape 2 — Télécharger l'installateur</h2>
   <ol>
     <li>Dans l'email de confirmation Lemon Squeezy, cliquez sur le lien de téléchargement</li>
-    <li>Vous obtenez <code>PronoEuroX_Setup_v1.0.27.exe</code> (~47 Mo)</li>
+    <li>Vous obtenez <code>PronoEuroX_Setup_v1.0.28.exe</code> (Bientôt disponible)</li>
     <li>Enregistrez-le sur votre Bureau ou dans <code>C:\Temp\</code></li>
   </ol>
 
   <h2>Étape 3 — Lancer l'installation</h2>
   <ol>
-    <li><strong>Double-cliquez</strong> sur <code>PronoEuroX_Setup_v1.0.27.exe</code></li>
+    <li><strong>Double-cliquez</strong> sur <code>PronoEuroX_Setup_v1.0.28.exe</code></li>
     <li>Windows SmartScreen affiche : <em>"Windows a protégé votre ordinateur — Microsoft Defender SmartScreen a empêché le démarrage d'une application non reconnue"</em></li>
     <li>Cliquez sur <strong>"Informations complémentaires"</strong></li>
     <li>Cliquez sur <strong>"Exécuter quand même"</strong></li>
   </ol>
 
   <div class="warning">
-    <strong>⚠️ SmartScreen — c'est normal.</strong> PronoEuroX est signé par un éditeur indépendant dont le certificat n'est pas dans la base Microsoft. Cette alerte apparaît pour TOUS les logiciels d'éditeurs non mainstream. Aucune inquiétude.
+    <strong>⚠️ SmartScreen — c'est normal.</strong> Le logiciel n'est pas signé numériquement : aucun certificat d'éditeur n'a été acheté pour lui. La signature numérique est ce qui permet à Windows d'identifier l'auteur d'un programme avec certitude ; sans elle, Windows affiche cet avertissement pour tout fichier téléchargé. Ce message ne signale aucun problème sur votre ordinateur.
   </div>
 
   <ol start="5">
     <li>L'installateur Inno Setup s'ouvre</li>
     <li>Choisissez la langue (Français par défaut)</li>
-    <li>Acceptez la licence MIT</li>
+    <li>Acceptez la licence d'usage personnel</li>
     <li>Choisissez le dossier d'installation (par défaut : <code>C:\Program Files (x86)\PronoEuroX\</code>)</li>
     <li>Cochez "Créer une icône sur le Bureau"</li>
     <li>Cliquez <strong>"Installer"</strong></li>
@@ -154,9 +154,9 @@
 
   <h2>Étape 5 — Configuration initiale</h2>
   <ol>
-    <li>Choisissez la langue de l'interface (FR / EN / ES)</li>
+    <li>Choisissez la langue de l'interface (français, anglais ou espagnol)</li>
     <li>Sélectionnez votre pays dans la liste des 9 pays Euromillions</li>
-    <li>Le logiciel charge automatiquement les 1979 tirages historiques depuis février 2004</li>
+    <li>Le logiciel embarque déjà l'historique depuis février 2004. Au premier lancement, clique sur <strong>« Mettre à jour les tirages »</strong> pour récupérer les tirages les plus récents depuis les sites publics de résultats</li>
     <li>Le tableau de bord s'affiche avec les statistiques globales</li>
   </ol>
 
@@ -174,7 +174,7 @@
 
   <div class="troubleshooting">
     <strong>❓ SmartScreen se déclenche à chaque lancement</strong><br>
-    C'est le comportement normal pour un éditeur non reconnu. À chaque fois : "Informations complémentaires" → "Exécuter quand même". Pour éviter cela à l'avenir, ajoutez PronoEuroX aux applications approuvées par Windows Defender.
+    C'est le comportement normal pour un logiciel non signé. À chaque fois : "Informations complémentaires" → "Exécuter quand même". Pour éviter cela à l'avenir, ajoutez PronoEuroX aux applications approuvées par Windows Defender.
   </div>
 
   <div class="troubleshooting">
@@ -184,7 +184,7 @@
 
   <div class="troubleshooting">
     <strong>❓ Le logiciel se lance mais les données ne se chargent pas</strong><br>
-    Vérifiez votre connexion Internet au premier lancement. Les 1979 tirages sont téléchargés depuis les archives publiques FDJ. Si vous êtes derrière un proxy d'entreprise, désactivez-le pour le premier lancement.
+    Vérifiez votre connexion Internet avant de cliquer sur « Mettre à jour les tirages » : les tirages manquants sont téléchargés depuis plusieurs sources publiques de résultats en ligne. Si vous êtes derrière un proxy d'entreprise, désactivez-le pour le premier lancement.
   </div>
 
   <div class="troubleshooting">
@@ -204,8 +204,8 @@
   </ul>
 
   <footer>
-    <p><strong>PronoEuroX</strong> — Logiciel libre d'analyse statistique Euromillions</p>
-    <p>1 979 tirages depuis février 2004 — Windows 10 — 20 € paiement unique — Licence MIT</p>
+    <p><strong>PronoEuroX</strong> — Logiciel d'analyse statistique Euromillions</p>
+    <p>1 993 tirages depuis février 2004 (dernier tirage : 27 octobre 2026) — Windows 10 — 59 € paiement unique — Licence d'usage personnel</p>
     <p><a href="index.html">Accueil</a> · <a href="faq.html">FAQ</a> · <a href="https://pronoeurox.lemonsqueezy.com">Lemon Squeezy</a></p>
   </footer>
 
