@@ -28,7 +28,7 @@
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Windows 10",
     "softwareVersion": "1.0.28",
-    "fileSize": "Bientôt disponible",
+    "fileSize": "39,7 Mo (41 658 534 octets)",
     "softwareRequirements": "Windows 10 (64 bits), 200 Mo d'espace disque",
     "inLanguage": "fr",
     "brand": {
@@ -64,6 +64,7 @@
     ol.steps { background: white; padding: 24px 24px 24px 48px; border-radius: 8px; border-left: 4px solid #0066cc; }
     ol.steps li { margin-bottom: 16px; }
     .code { background: #1a1a1a; color: #00ff88; padding: 12px 16px; border-radius: 6px; font-family: "Consolas", "Courier New", monospace; font-size: 0.9em; margin: 8px 0; }
+    li code { overflow-wrap: anywhere; }
     .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 16px; margin: 16px 0; border-radius: 4px; }
     .info { background: #d1ecf1; border-left: 4px solid #0c5460; padding: 16px; margin: 16px 0; border-radius: 4px; }
     .troubleshooting { background: #f8d7da; border-left: 4px solid #dc3545; padding: 16px; margin: 16px 0; border-radius: 4px; }
@@ -92,7 +93,7 @@
   <div class="hero">
     <h1>Installer PronoEuroX</h1>
     <p>Tutoriel Windows 10 — 5 minutes chrono</p>
-    <div class="cta">Acheter en ligne — Bientôt disponible</div>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NrA6PsXZgd25YT4bOf5q?quantity=1" target="_blank" rel="noopener noreferrer">Acheter en ligne</a>
   </div>
 
   <h2>Prérequis</h2>
@@ -100,15 +101,15 @@
     <li><strong>Système</strong> : Windows 10 (64 bits). Windows 11 non testé.</li>
     <li><strong>Espace disque</strong> : 200 Mo minimum</li>
     <li><strong>RAM</strong> : 2 Go minimum</li>
-    <li><strong>Connexion Internet</strong> : requise uniquement quand vous cliquez sur « Mettre à jour les tirages » (puis logiciel 100 % offline)</li>
-    <li><strong>Compte client</strong> : pour acheter et recevoir le lien de téléchargement</li>
+    <li><strong>Connexion Internet</strong> : requise pour activer la licence au premier lancement et quand vous cliquez sur « Mettre à jour les tirages » ; le reste du temps, le logiciel fonctionne hors connexion</li>
+    <li><strong>Adresse e-mail</strong> : valide, pour recevoir la clé de licence et le lien de téléchargement</li>
   </ul>
 
   <h2>Étape 1 — Acheter la licence</h2>
   <ol>
-    <li>Allez sur la page de paiement — Bientôt disponible</li>
-    <li>Remplissez le formulaire (carte bancaire ou PayPal)</li>
-    <li>Vous recevez un email de confirmation avec le <strong>lien de téléchargement</strong> du logiciel</li>
+    <li>Allez sur la <a href="https://checkout.dodopayments.com/buy/pdt_0NrA6PsXZgd25YT4bOf5q?quantity=1" target="_blank" rel="noopener noreferrer">page de paiement</a></li>
+    <li>Remplissez le formulaire (carte bancaire)</li>
+    <li>Vous recevez <strong>deux e-mails</strong> de Dodo Payments (en anglais ; pensez à vérifier vos courriers indésirables) : l'un contient votre <strong>clé de licence</strong>, l'autre vous permet de télécharger le logiciel. Aucun compte à créer.</li>
   </ol>
 
   <div class="warning">
@@ -117,9 +118,10 @@
 
   <h2>Étape 2 — Télécharger l'installateur</h2>
   <ol>
-    <li>Dans l'email de confirmation de commande, cliquez sur le lien de téléchargement</li>
-    <li>Vous obtenez <code>PronoEuroX_Setup_v1.0.28.exe</code> (Bientôt disponible)</li>
+    <li>Dans l'e-mail qui contient « Access in your customer portal », cliquez sur ce lien ; dans le portail, cliquez sur « View » à côté de votre commande, puis sur l'icône de téléchargement.</li>
+    <li>Vous obtenez <code>PronoEuroX_Setup_v1.0.28.exe</code> (39,7 Mo)</li>
     <li>Enregistrez-le sur votre Bureau ou dans <code>C:\Temp\</code></li>
+    <li>Vérification facultative : depuis le dossier où le fichier est enregistré, tapez dans PowerShell <code>Get-FileHash .\PronoEuroX_Setup_v1.0.28.exe -Algorithm SHA256</code> ; l'empreinte affichée doit être identique à <code>7c9f205f3817fc10419ceb510ce04beddfcded6772cf0d60f3bea90f9273d80f</code> (majuscules ou minuscules, peu importe).</li>
   </ol>
 
   <h2>Étape 3 — Lancer l'installation</h2>
@@ -135,10 +137,11 @@
   </div>
 
   <ol start="5">
+    <li>Si Windows affiche une fenêtre demandant l'autorisation d'installer le programme (droits d'administrateur), acceptez-la</li>
     <li>L'installateur Inno Setup s'ouvre</li>
     <li>Choisissez la langue (Français par défaut)</li>
     <li>Acceptez la licence d'usage personnel</li>
-    <li>Choisissez le dossier d'installation (par défaut : <code>C:\Program Files (x86)\PronoEuroX\</code>)</li>
+    <li>Choisissez le dossier d'installation (par défaut : <code>C:\Program Files\PronoEuroX\</code>)</li>
     <li>Cochez "Créer une icône sur le Bureau"</li>
     <li>Cliquez <strong>"Installer"</strong></li>
     <li>Attendez 10-20 secondes</li>
@@ -149,7 +152,7 @@
   <ol>
     <li>Lancez PronoEuroX depuis le Bureau ou le menu Démarrer</li>
     <li>Si SmartScreen se redéclenche, même manipulation : <strong>"Informations complémentaires" → "Exécuter quand même"</strong></li>
-    <li>Le logiciel s'ouvre directement &mdash; <strong>aucune activation n'est requise</strong>, aucune saisie n'est demandée. Le logiciel est prêt à l'emploi.</li>
+    <li>Au premier lancement, le logiciel demande la clé de licence reçue après votre achat : saisissez-la puis cliquez sur « Activer ». Une connexion Internet est nécessaire pour cette étape. Une licence ne fonctionne que sur un seul PC. Le logiciel s'ouvre ensuite, prêt à l'emploi.</li>
   </ol>
 
   <h2>Étape 5 — Configuration initiale</h2>

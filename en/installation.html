@@ -28,7 +28,7 @@
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Windows 10",
     "softwareVersion": "1.0.28",
-    "fileSize": "Coming soon",
+    "fileSize": "39.7 MB (41,658,534 bytes)",
     "softwareRequirements": "Windows 10 (64-bit), 200 MB disk space",
     "inLanguage": "en",
     "brand": {
@@ -64,6 +64,7 @@
     ol.steps { background: white; padding: 24px 24px 24px 48px; border-radius: 8px; border-left: 4px solid #0066cc; }
     ol.steps li { margin-bottom: 16px; }
     .code { background: #1a1a1a; color: #00ff88; padding: 12px 16px; border-radius: 6px; font-family: "Consolas", "Courier New", monospace; font-size: 0.9em; margin: 8px 0; }
+    li code { overflow-wrap: anywhere; }
     .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 16px; margin: 16px 0; border-radius: 4px; }
     .info { background: #d1ecf1; border-left: 4px solid #0c5460; padding: 16px; margin: 16px 0; border-radius: 4px; }
     .troubleshooting { background: #f8d7da; border-left: 4px solid #dc3545; padding: 16px; margin: 16px 0; border-radius: 4px; }
@@ -92,7 +93,7 @@
   <div class="hero">
     <h1>Install PronoEuroX</h1>
     <p>Windows 10 tutorial — 5 minutes flat</p>
-    <div class="cta">Buy online — Coming soon</div>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NrA6PsXZgd25YT4bOf5q?quantity=1" target="_blank" rel="noopener noreferrer">Buy online</a>
   </div>
 
   <h2>Requirements</h2>
@@ -100,15 +101,15 @@
     <li><strong>System</strong>: Windows 10 (64-bit). Windows 11 not tested.</li>
     <li><strong>Disk space</strong>: 200 MB minimum</li>
     <li><strong>RAM</strong>: 2 GB minimum</li>
-    <li><strong>Internet connection</strong>: required only when you click &ldquo;Update draws&rdquo; (then the software is 100% offline)</li>
-    <li><strong>Customer account</strong>: to purchase and receive the download link</li>
+    <li><strong>Internet connection</strong>: required to activate the licence at first launch and when you click &ldquo;Update draws&rdquo;; the rest of the time, the software works offline</li>
+    <li><strong>Email address</strong>: valid, to receive the licence key and the download link</li>
   </ul>
 
   <h2>Step 1 — Purchase the licence</h2>
   <ol>
-    <li>Go to the checkout page — Coming soon</li>
-    <li>Fill in the form (credit card or PayPal)</li>
-    <li>You receive a confirmation email with the <strong>download link</strong> for the software</li>
+    <li>Go to the <a href="https://checkout.dodopayments.com/buy/pdt_0NrA6PsXZgd25YT4bOf5q?quantity=1" target="_blank" rel="noopener noreferrer">checkout page</a></li>
+    <li>Fill in the form (credit card)</li>
+    <li>You receive <strong>two emails</strong> from Dodo Payments (in English; check your junk folder): one contains your <strong>licence key</strong>, the other lets you download the software. No account to create.</li>
   </ol>
 
   <div class="warning">
@@ -117,9 +118,10 @@
 
   <h2>Step 2 — Download the installer</h2>
   <ol>
-    <li>In the order confirmation email, click the download link</li>
-    <li>You obtain <code>PronoEuroX_Setup_v1.0.28.exe</code> (Coming soon)</li>
+    <li>In the email that contains &ldquo;Access in your customer portal&rdquo;, click that link; in the portal, click &ldquo;View&rdquo; next to your order, then the download icon.</li>
+    <li>You obtain <code>PronoEuroX_Setup_v1.0.28.exe</code> (39.7 MB)</li>
     <li>Save it to your Desktop or to <code>C:\Temp\</code></li>
+    <li>Optional check: from the folder where the file is saved, type in PowerShell <code>Get-FileHash .\PronoEuroX_Setup_v1.0.28.exe -Algorithm SHA256</code>; the fingerprint shown must match <code>7c9f205f3817fc10419ceb510ce04beddfcded6772cf0d60f3bea90f9273d80f</code> (upper or lower case does not matter).</li>
   </ol>
 
   <h2>Step 3 — Run the installation</h2>
@@ -135,10 +137,11 @@
   </div>
 
   <ol start="5">
+    <li>If Windows shows a window asking permission to install the program (administrator rights), accept it</li>
     <li>The Inno Setup installer opens</li>
     <li>Choose the installer language (French or English)</li>
     <li>Accept the personal-use licence</li>
-    <li>Choose the installation folder (default: <code>C:\Program Files (x86)\PronoEuroX\</code>)</li>
+    <li>Choose the installation folder (default: <code>C:\Program Files\PronoEuroX\</code>)</li>
     <li>Tick "Create a desktop icon"</li>
     <li>Click <strong>"Install"</strong></li>
     <li>Wait 10-20 seconds</li>
@@ -149,7 +152,7 @@
   <ol>
     <li>Launch PronoEuroX from the Desktop or the Start menu</li>
     <li>If SmartScreen triggers again, same procedure: <strong>"More info" → "Run anyway"</strong></li>
-    <li>The software opens directly &mdash; <strong>no activation is required</strong>, no input is needed. The software is ready to use.</li>
+    <li>At first launch, the software asks for the licence key you received after your purchase: enter it, then click &ldquo;Activate&rdquo;. An Internet connection is needed for this step. A licence works on one PC only. The software then opens, ready to use.</li>
   </ol>
 
   <h2>Step 5 — Initial setup</h2>
